@@ -26,11 +26,30 @@ console.log(divide(25, 5));
     it('parses n as an integer and returns the parsed integer', function() {
       expect(makeInt(a.toString())).toEqual(a)
     })*/
-function makeInt(string){
-    
+
+let n = 0;
+
+function increment(n) {
+    n++;
+    return n;
 }
+console.log(increment(n));
 
-console.log(parseInt("n"));
+function decrement(n) {
+    n--;
+    return n;
+}
+console.log(decrement(n));
 
-n = Number.parseInt("249");
-console.log (n)
+function makeInt(n) {
+    return parseInt(n);
+
+}
+console.log(makeInt("10"));
+console.log(makeInt("9000"));
+
+function preserveDecimal(n) {
+    return parseFloat(n);
+}
+console.log(preserveDecimal("10.000"));
+
